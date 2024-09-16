@@ -1,0 +1,60 @@
+RepositoryName,CommitName,Authors,CommitId,ModifiedFiles,DateTime
+subsurface,mobile:updateversionto3.0.15,dirkhh,4998052a78b425ae0c267d76b1acbb3a630e8816,cmake/Modules/version.cmake,2020-09-17 18:19:56
+apps-android-wikipedia,Updatetravis.,dbrant,adf5d04ea4ef6562970bacbd01785803aa0697ed,.travis.yml,2019-11-05 00:13:32
+apps-android-wikipedia,BumpversionCode,dbrant,0b80c9815e6d790ffdd731f28f18a4c1bb17d0d3,app/build.gradle,2018-10-23 19:51:44
+csound,ReleaseNotes,jpffitch,643b709bd1b7d5de1bd963149995f7034473accb,"Opcodes/squinewave.c,Release_Notes/Version_6.10.md",2017-12-04 16:21:03
+csound,updatedfor1.1.3release,kunstmusik,c659dbc62dd6405c3ac1eb17aa32f72d077e5450,frontends/max_csound_tilde/installer/build-installer.sh,2015-06-15 05:43:53
+csound,UpdatedAPIversionto1.01toreflectchangetoCSOUNDstructure,Istvan Varga,37fcf47f70b9511b0d17c16755ba95eef331c3eb,H/version.h,2006-04-09 16:30:27
+expo,Publishprereleasereact-native-adapterandunimodulescorewithAndr…,tsapeta,0bfe783584a4072bfe42471289472c3be65a2ec1,"apps/bare-expo/package.json,apps/expo-payments/package.json,ios/Podfile.lock,ios/Pods/.project_cache/installation_cache.yaml,ios/Pods/LocalPodspecs/UMCore.podspec.json,ios/Pods/Manifest.lock,packages/@unimodules/core/android/build.gradle,packages/@unimodules/core/package.json,packages/@unimodules/react-native-adapter/android/build.gradle,packages/@unimodules/react-native-adapter/package.json,packages/expo/bundledNativeModules.json,packages/expo/package.json,packages/react-native-unimodules",2019-10-21 08:13:04
+k-9,Prepareforversion5.731,cketti,68be2ba75e989bcd21441eb45c74174cfda6e4ce,app/k9mail/build.gradle,2021-02-16 19:15:17
+android,Updatelibraryreferenceforrelease-1.5.6,masensio,0f7908ef047cc391ea976c52a7401701c6d87866,owncloud-android-library,2014-05-28 08:37:32
+remixed-dungeon,versioniteration,DeadDie,981ad9b34afc51d4a5f8803a6900e20e5a9d14ec,PixelDungeon/src/main/AndroidManifest.xml,2016-03-28 15:04:11
+Signal-Android,Bumpversionto5.6.3,cody-signal,e3d3129e6d663b8651e5c13b17254e8849f2ea61,app/build.gradle,2021-04-05 20:11:03
+Signal-Android,Bumpversionto5.1.3,greyson-signal,12321bc2f06b0b8e4ec277d28ebee4d8e5c6b03a,app/build.gradle,2021-01-10 04:22:10
+Signal-Android,Bumpversionto4.61.1,greyson-signal,f7b150f2d2c8661754e73ed144cc9189b38dede9,app/build.gradle,2020-06-01 21:43:05
+Signal-Android,Bumpversionto4.58.2,greyson-signal,5dc3cc65a8b365abc790e9cd4007d132a2bedb14,app/build.gradle,2020-03-30 21:53:08
+Signal-Android,Bumpversionto3.22.1,moxie0,ca3337232b16f07d48d4ac80fd0c852fd8e45be4,AndroidManifest.xml,2016-11-14 21:41:12
+actor-platform,chore(server):releasenotes,John Doe,eaee0a0361218ab91b4ee4ae2a5d8631af24f15f,actor-server/notes/1.0.58.markdown,2015-12-08 19:55:22
+Player,BumpWiireleasedate,fdelapena,976bf2869f500b084e8b8aa500afa89b0eb1d5fb,builds/wii/meta.xml,2014-05-30 18:01:54
+open-keychain,Version5.2-beta1,dschuermann,69182df88cc5ee58103384b37eded3829c0a930e,OpenKeychain/build.gradle,2018-07-04 21:51:25
+Simple-Gallery,updateversionto6.10.5,tibbi,250ed1a5bf90d5fb25c705e3bc43170508a10bf4,app/build.gradle,2019-11-10 11:55:05
+status-mobile,ci:fixwhatversionissetforiOSPRbuilds,jakubgs,b95056f3cea850f3cca01198c4e749d0fabf7bc8,"ci/Jenkinsfile.android,ci/Jenkinsfile.combined,ci/Jenkinsfile.ios,ci/Jenkinsfile.linux,ci/Jenkinsfile.macos,ci/Jenkinsfile.nix-cache,ci/Jenkinsfile.windows,ci/tools/Jenkinsfile.fastlane-clean,ci/tools/Jenkinsfile.playstore-meta,ios/StatusIm.xcodeproj/project.pbxproj,ios/scripts/set_xcode_version.sh,.gitignore",2020-07-06 07:47:39
+tutanota,updatedtov1.6.1,armhub,03dd2f66b1e38ab976bb36d8304ab071b45c7868,package.json,2014-12-17 15:20:47
+bibletime,Released2.8beta.,Jaak Ristioja,48f4ed024c85566fff2a84e3792a97f1e633a845,"CMakeLists.txt,ChangeLog",2010-10-15 21:01:56
+apps-android-commons,Versioningforrelease2.4.1,misaochan,9557ed609901cc439da059d8aa9b8ce02de91fcc,app/build.gradle,2017-05-27 07:34:19
+shattered-pixel-dungeon,V0.2.1:Updatedgeneratorexceptionhandlingtoalwaysbeinternal.,00-Evan,ba8d158ba73919f313cff7711e6429dee2a0cf3d,src/com/shatteredpixel/shatteredpixeldungeon/items/Generator.java,2014-10-03 18:55:47
+Simple-Calendar,updateversionto6.11.3,tibbi,7117decb89d99ca4546f0446d08b205aa56cecbf,app/build.gradle,2020-12-07 21:27:28
+Simple-Calendar,updateversionto2.1.6,tibbi,f7cf9442c8cb775c8e591a4c37b96786af825e04,app/build.gradle,2017-02-06 21:42:10
+LibreraReader,prepareforrelease,foobnix,a56cad681ad02986f138a0ea3364a84654f954c3,"Builder/local.properties,EBookDroid/src/com/foobnix/pdf/info/wrapper/DocumentWrapperUI.java,EBookDroid/src/com/foobnix/sys/AdvModeController.java,EBookDroid/src/org/ebookdroid/ui/viewer/ViewerActivityController.java,EbookaPDF/AndroidManifest.xml",2017-07-26 07:42:37
+kalemas/bibletime,Released2.8beta.,Jaak Ristioja,48f4ed024c85566fff2a84e3792a97f1e633a845,"CMakeLists.txt,ChangeLog",2010-10-15 21:01:56
+Slide,Updateversionnumber,SlideCI,1e642fd56fef565e55ffcaf9fd6b20cbdbbd9d93,app/build.gradle,2016-02-22 01:04:46
+habitica-android,bumpversionnumber,phillipthelen,7ca6a1e96363934475f095f14125d1fd5a4b42ae,"Habitica/AndroidManifest.xml,Habitica/src/com/habitrpg/android/habitica/ui/adapter/social/ChatRecyclerViewAdapter.java,.gitignore",2016-02-17 21:16:11
+paco,iOSupdateversionnumberto1.1.0,yimingcheung,c87d93ca96855986753c68736a5eca348179b082,Paco-iOS/Paco/config/Paco-Info.plist,2014-03-12 01:43:55
+jami-client-android,bumpversionto69,alinebonnet,0513d9b6d3c8f3257c757c0f28a6d5a95aea9151,ring-android/app/src/main/AndroidManifest.xml,2017-03-03 18:36:39
+Tusky,Release67,connyduck,1d9c9373379c113ee3e89dcd7d5e8101815b3755,app/build.gradle,2019-09-15 07:30:22
+samourai-wallet-android,bumpstagingversion,SamouraiDev,6494157f379a25f2a455ffa4a8b1ce1e9d7415aa,app/build.gradle,2018-03-15 07:48:44
+samourai-wallet-android,Version:Ricochet(release),SamouraiDev,f935ee7b9eee5102f2d48bf50c109be7c144732e,nan,2017-01-19 13:39:25
+bitwarden/mobile,bumpversionto2.11.2(#1473),mp-bw,10a718b0c79476eaf4cae504b5cb1de7c97b9224,"src/Android/Properties/AndroidManifest.xml,src/iOS.Autofill/Info.plist,src/iOS.Extension/Info.plist,src/iOS/Info.plist",2021-07-23 15:33:53
+ToxAndroidRefImpl,newversion1.0.34,zoff99,7e1ad2c7f26de688063a4fd7473dd53f314f0ba1,android-refimpl-app/app/build.gradle,2020-04-29 14:37:49
+SkiaSharp,Updatetov1.68.2(#1077),mattleibow,fedffbb5192adb07cda87fac938286389e144f36,"scripts/azure-pipelines.yml,VERSIONS.txt",2019-12-22 20:18:14
+notes-android,versionbumpto2.4.7,stefan-niedermann,bb4dccd47e306e8200244566ee8289f8d18981f5,"app/build.gradle,fastlane/metadata/android/en-US/changelogs/70.txt,fastlane/metadata/android/en-US/changelogs/71.txt",2020-01-12 11:11:57
+moonlight-android,Updatetoversion3.1.10,cgutman,1d9efb30e2a775f5fdfbc1131616453f7125f651,app/build.gradle,2015-10-12 00:11:48
+MaterialDrawer,-[release]v8.3.0,mikepenz,05f0b37f663cfede94bce15bdccbe3732e0a1c90,"README.md,build.gradle",2020-12-18 10:16:40
+MaterialDrawer,*[release]releasev0.9.4,mikepenz,39b9bf5240e391470b3736bbede2b7c610edfcfb,"app/build.gradle,library/build.gradle,library/src/main/res/values/library_materialdrawer_strings.xml,README.md,gradle.properties",2015-02-14 16:39:41
+kcanotify,UpdateVERSION,antest1,cde46142c2dbbffec180489fbb1d9f76852f046e,nan,2017-01-24 08:30:28
+vanilla,Version0.9.7,kreed,c2b0e9f92680343d00f6b8e692d7a8842b73e1f3,"releases/0.9.7.map,AndroidManifest.xml",2012-02-12 04:07:12
+gpslogger,ReleaseCandidate2,mendhak,2acec739dd05f7ba6bd65ebc0f2467dfb512e9b7,"fastlane/metadata/android/en-US/changelogs/118.txt,gpslogger/build.gradle",2021-09-28 22:07:34
+android-mdm-agent,ci(release):updateversiononandroidmanifest,teclib-bot,b641992360dd867660020179ece7ded0ba9b4a62,app/src/main/AndroidManifest.xml,2018-04-28 17:24:24
+Gitskarios,upgradeversion,alorma,319e2c478a0215af43dd27241296b86ba0f15e98,"app/build.gradle,app/src/main/res/raw/changelog.xml",2015-12-23 20:26:10
+syncthing-android,Updatedsyncthingtov0.11.13.,Nutomic,2123eb6a47a3fa6fca64f323513b10baa16c969d,ext/syncthing/src/github.com/syncthing/syncthing,2015-07-07 21:52:22
+Android-Password-Store,versionbump,zeapo,3417bdfb0bf68833594315c24ad55db8d37dab4f,app/build.gradle,2014-11-09 16:15:51
+afwall,preparefor1.2.6.1release,ukanth,2c918390827800d7ef0f7b34111a4f7b8481c0f7,"assets/about.html,AndroidManifest.xml,Changelog.md",2013-09-06 12:08:57
+sms-backup-plus,Release1.1.5,jberkel,bffd8297c298c78e7110066c37224bcf54ad4fee,README.md,2010-11-04 12:57:08
+sthlmtraveling,Bumpversion,johannilsson,37f2022985255362b5f2e9b864608deaeb07918f,sthlmtraveling/build.gradle,2014-05-23 13:08:32
+sthlmtraveling,Bumpedversion.,johannilsson,d4bb763e45cf3289e67115be53d2457583a82efe,AndroidManifest.xml,2011-05-01 16:26:36
+hipda,releasev4.3.04,GreenSkinMonster,9c49845f5fd53e14d5bdab7b49412fe6e278af67,"hipda/src/main/AndroidManifest.xml,hipda/src/main/assets/release-notes.txt",2017-09-19 12:44:06
+hipda,releasev4.0.04,GreenSkinMonster,a5ee11fed79287903595e4c5d8c9f7528a16ca04,"hipda/src/main/AndroidManifest.xml,hipda/src/main/assets/release-notes.txt",2016-12-09 07:41:44
+hipda,release1.4.05,GreenSkinMonster,94e51ed543ea1dd0158c8cf63b0ee8c2c3ce5413,hipda/src/main/AndroidManifest.xml,2015-04-26 12:32:28
+Simple-Camera,updatetheversionto13(1.12),tibbi,86848f556d30609f03aaff63562886868c6234d2,app/build.gradle,2016-07-04 21:57:15
+Gordon01/vanilla,Version0.9.7,kreed,c2b0e9f92680343d00f6b8e692d7a8842b73e1f3,"releases/0.9.7.map,AndroidManifest.xml",2012-02-12 04:07:12
+Android-Universal-Image-Loader,[maven-release-plugin]preparereleasev1.7.1,nostra13,b5ea690ce34a04c12673ef9de0935d89488db045,"library/pom.xml,sample/pom.xml,pom.xml",2013-01-31 17:30:50
