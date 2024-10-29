@@ -11,49 +11,31 @@ df['NumOfContributors'] = pd.to_numeric(df['NumOfContributors'], errors='coerce'
 # Rimuovere righe con valori NaN in 'NumOfContributors'
 df = df.dropna(subset=['NumOfContributors'])
 
-# Selezionare solo le colonne di interesse
-repositoryContributorsDf = df[['RepositoryName', 'NumOfContributors']]
+# Selezionare solo le colonne di interesse e rimuovere duplicati
+repositoryContributorsDf = df[['RepositoryName', 'NumOfContributors']].drop_duplicates(subset=['RepositoryName'], keep='first')
 
-# Rimuovere duplicati
-repositoryContributorsDf = repositoryContributorsDf.drop_duplicates(subset=['RepositoryName'], keep='first')
+# Filtrare repository con numero di contributori maggiore o uguale a 1
+repositoryContributorsDf = repositoryContributorsDf[repositoryContributorsDf['NumOfContributors'] >= 1]
 
-# Filtrare repository con 0 contributori
-repos_with_zero_contributors = repositoryContributorsDf[repositoryContributorsDf['NumOfContributors'] == 0]
+# Definiamo i nuovi bin e le etichette secondo i range specificati
+bin_edges = [0, 2, 5, 10, 50, 100, 200, 500, np.inf]
+bin_labels = ['[1,2]', '[3,5]', '[6,10]', '[11,50]', '[51,100]', '[101,200]', '[201,500]', '[500+]']
 
-# Controlla quanti repository hanno 0 contributori
-print(f"Numero di repository con 0 contributori: {len(repos_with_zero_contributors)}")
-
-# Mostra i repository con 0 contributori
-print("\nRepository con 0 contributori:")
-print(repos_with_zero_contributors)
-
-# Definiamo i bin e le etichette
-bin_edges = [-0.5, 0.5, 2.5, 5.5, 9.5, np.inf]
-bin_labels = ['[0]', '[1,2]', '[3,5]', '[6,9]', '[10+]']
-
-# Crea una distribuzione dei dati usando pd.cut con i bin definiti
+# Crea una distribuzione dei dati usando pd.cut con i nuovi bin definiti
 barChartData = pd.cut(repositoryContributorsDf['NumOfContributors'], bins=bin_edges, labels=bin_labels)
 
 # Conta il numero di repository per ciascun intervallo
 barChartCounts = barChartData.value_counts().sort_index()
 
-# Verifica se ci sono repository fuori intervallo che dovrebbero essere inclusi
-num_out_of_bounds = len(repositoryContributorsDf) - len(barChartData.dropna())
-if num_out_of_bounds > 0:
-    # Aggiungi i repository fuori intervallo a '[10+]' se non esistono ancora
-    if '[10+]' in barChartCounts.index:
-        barChartCounts['[10+]'] += num_out_of_bounds
-    else:
-        barChartCounts['[10+]'] = num_out_of_bounds
-
 # Creazione del grafico a barre
 barChart = barChartCounts.plot.bar(color="green")
 
-plt.xticks(rotation=0)
+plt.xticks(rotation=45)
 plt.xlabel('Number of Contributors')
 plt.ylabel('Number of Repositories')
 
 # Aggiungi etichette alle barre
 barChart.bar_label(barChart.containers[0])
 
+plt.title('Distribution of Repositories by Number of Contributors')
 plt.show()
