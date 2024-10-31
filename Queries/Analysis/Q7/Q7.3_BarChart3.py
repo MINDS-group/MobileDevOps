@@ -23,11 +23,11 @@ print(f"Valore minimo in 'NumberOfMerges': {min_value}")
 print(f"Valore massimo in 'NumberOfMerges': {max_value}")
 
 # Definiamo i bin e le etichette
-bin_edges = [0, 1, 10, 25, 50, 100, 200, 300, 400, 500, np.inf]
-bin_labels = ['[0]', '[1,10]', '[11,25]', '[26,50]', '[51,100]', '[101,200]', '[201,300]', '[301,400]', '[401,500]', '[500+]']
+bin_edges = [0, 0.99999999, 10, 25, 50, 100, 200, 300, 400, 500, np.inf]
+bin_labels = ['[0]', '(0,10]', '(10,25]', '(25,50]', '(50,100]', '(100,200]', '(200,300]', '(300,400]', '(400,500]', '(500+]']
 
 # Crea una distribuzione dei dati usando pd.cut con i bin definiti
-barChartData = pd.cut(dfRepositoryMetadata['NumberOfMerges'], bins=bin_edges, labels=bin_labels)
+barChartData = pd.cut(dfRepositoryMetadata['NumberOfMerges'], bins=bin_edges, labels=bin_labels, include_lowest=True)
 
 # Conta il numero di repository per ciascun intervallo
 barChartCounts = barChartData.value_counts().sort_index()
