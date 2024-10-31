@@ -15,15 +15,15 @@ csvFile = csvFile.drop_duplicates(subset=['RepositoryName'])
 total_repositories_original = csvFile['RepositoryName'].nunique()
 print(f"Totale repository nel dataset originale: {total_repositories_original}")
 
-# Controllare i valori minimi e massimi nella colonna "CommitFrequency (days)"
+# Controlla i valori minimi e massimi nella colonna "CommitFrequency (days)"
 min_value = csvFile['CommitFrequency (days)'].min()
 max_value = csvFile['CommitFrequency (days)'].max()
 print(f"Valore minimo in 'CommitFrequency (days)': {min_value}")
 print(f"Valore massimo in 'CommitFrequency (days)': {max_value}")
 
-# Includere tutti i repository nei bin, compresi quelli con frequenze di commit pari a 0 o negativi
-bins = [-np.inf, 0, 2, 5, 9, np.inf]
-labels = ['[0]', '[1,2]', '[3,5]', '[6,9]', '[10+]']
+# Definisci i nuovi bin per includere gli intervalli richiesti
+bins = [0, 2, 5, 10, np.inf]
+labels = ['(0,2]', '(2,5]', '(5,10]', '(10+]']
 barChartData = pd.cut(csvFile['CommitFrequency (days)'], bins=bins, labels=labels)
 
 # Conta il numero di repository per ciascun intervallo

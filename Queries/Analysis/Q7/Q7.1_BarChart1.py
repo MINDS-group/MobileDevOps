@@ -9,7 +9,7 @@ dfCsv = pd.DataFrame(csvFile)
 
 pullRequestDf = dfCsv["NumOfPullRequests"].to_numpy()
 
-barChartData = pd.cut(pullRequestDf, [-np.inf,0,3,5,10,20,np.inf], labels=['0','[1,3]','[4,5]','[6,10]','[11,20]','[21+]'] )
+barChartData = pd.cut(pullRequestDf, [-np.inf,0,3,5,10,20,np.inf], labels=['[0]','(0,3]','(3,5]','(5,10]','(10,20]','(20+]'] )
 barChart = barChartData.value_counts().plot.bar(color="green" ,yticks=[100,500,1000,2000,3000,4000,5000,6000])
 
 plt.xticks(rotation=0)
